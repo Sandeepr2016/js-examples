@@ -33,6 +33,7 @@ result.map((val, ind) => {
 console.log(output);
 */
 
+/*
 //start typing here
 var a = ['1', 'Test', '2', 'Demo', '3', 'Temp'];
 // {1:"Test",2:"Demo",3:"Temp"}
@@ -45,5 +46,19 @@ a.forEach((val, i) => {
 
 output = b;
 console.log(b);
+*/
+
+// <<<<<<<<<<<<< Creating closure example >>>>>>>>>>>>
+
+function baseFunc(baseNumber) {
+  return (N) => {
+    return baseNumber + N;
+  };
+}
+
+var addSix = baseFunc(6);
+var addFive = baseFunc(5);
+
+output = addSix(10) + addFive(-25);
 
 appDiv.innerHTML = JSON.stringify(output);

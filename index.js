@@ -48,20 +48,7 @@ output = b;
 console.log(b);
 */
 
-// <<<<<<<<<<<<< Creating closure example >>>>>>>>>>>>
-
-// function baseFunc(baseNumber) {
-//   return (N) => {
-//     return baseNumber + N;
-//   };
-// }
-
-// var addSix = baseFunc(6);
-// var addFive = baseFunc(5);
-
-// output = addSix(10) + addFive(-25);
-
-// appDiv.innerHTML = JSON.stringify(output);
+//<<<<<<<<<<<<<<<<<<<<< Closure Start >>>>>>>>>>>>>>>>>>>>>>>>
 
 // CLosure is a function which has its own lexical scope / otherway its own memory
 
@@ -115,3 +102,18 @@ let multiplyByThree = multipier(3);
 
 console.log(multiplyByThree(5)); // 3 * 5 =15
 console.log(multiplyByThree(6)); // 3 * 6 = 18
+
+// same way we can use addition (+), division (/), more...,
+
+function baseFunc(baseNumber) {
+  return (N) => {
+    return baseNumber + N;
+  };
+}
+
+var addSix = baseFunc(6);
+var addFive = baseFunc(5);
+
+output = addSix(10) + addFive(-25);
+
+//<<<<<<<<<<<<<<<Closure End >>>>>>>>>>>>>>>>>>>
